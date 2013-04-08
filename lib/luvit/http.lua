@@ -531,6 +531,7 @@ end
 
 --[[ ServerResponse ]]--
 local ServerResponse = OutgoingMessage:extend()
+http.ServerResponse = ServerResponse
 function ServerResponse:initialize(req)
   OutgoingMessage.initialize(self)
 
