@@ -100,6 +100,7 @@ http.STATUS_CODES = STATUS_CODES
 --------------------------------------------------------------------------------
 --[[ Incoming Message Base Class ]]--
 local IncomingMessage = iStream:extend()
+http.IncomingMessage = IncomingMessage
 function IncomingMessage:initialize(socket)
   self.socket = socket
   self.readable = true
